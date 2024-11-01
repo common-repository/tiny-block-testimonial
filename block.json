@@ -1,0 +1,61 @@
+{
+	"apiVersion": 2,
+	"name": "tiny-block/testimonial",
+	"title": "Tiny Block Testimonial",
+	"category": "text",
+	"icon": "format-quote",
+	"keywords": [ "tiny", "testimonial" ],
+	"description": "A simple testimonial block.",
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"textdomain": "tiny-block-testimonial",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"example": {
+        "attributes": {
+            "quote": "This is a really simple block. Simple to use and it just works !",
+			"author": "Me",
+			"imageSrc":"https://www.gravatar.com/avatar/e4e3988530fb5faa5ace2a7b09b0e18d",
+			"imageId": "1",
+			"imageWidth":150,
+			"imageHeight":150
+        }
+    },
+	"attributes": {
+        "imageId": {
+            "type": "number",
+			"default": 0
+        },
+        "imageWidth": {
+            "type": "number",
+			"default": 0
+        },
+        "imageHeight": {
+            "type": "number",
+			"default": 0
+        },
+        "imageSrc": {
+			"type": "string",
+			"default": ""
+        },
+        "imageAlt": {
+			"type": "string",
+			"default": ""
+        },
+        "quote": {
+			"type": "string",
+			"default": ""
+        },
+        "author": {
+			"type": "string",
+			"default": ""
+        },
+        "textAlign": {
+			"type": "string",
+			"default": false
+        }
+    }
+}
